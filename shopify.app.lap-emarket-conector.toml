@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "f522497bd31e9922804aece651589a97"
+name = "Lap Emarket Conector"
+handle = "lap-emarket-conector"
+application_url = "https://equality-scsi-minor-wv.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "zobek-asdfg.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_shipping,write_shipping"
+
+[auth]
+redirect_urls = [
+  "https://equality-scsi-minor-wv.trycloudflare.com/auth/callback",
+  "https://equality-scsi-minor-wv.trycloudflare.com/auth/shopify/callback",
+  "https://equality-scsi-minor-wv.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false

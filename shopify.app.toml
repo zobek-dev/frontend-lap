@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "5f789612cf04fea48908bfe9a9337c66"
+name = "Emarket Lap Conector App "
+handle = "emarket-lap-conector-app"
+application_url = "https://amateur-stephanie-occupied-sender.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "zobek-asdfg.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_shipping,write_shipping"
+
+[auth]
+redirect_urls = [
+  "https://amateur-stephanie-occupied-sender.trycloudflare.com/auth/callback",
+  "https://amateur-stephanie-occupied-sender.trycloudflare.com/auth/shopify/callback",
+  "https://amateur-stephanie-occupied-sender.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
